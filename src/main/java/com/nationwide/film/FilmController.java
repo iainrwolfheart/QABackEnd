@@ -1,24 +1,44 @@
 package com.nationwide.film;
 
 import java.util.List;
+import java.util.Optional;
 
-import com.nationwide.constants.Constants;
+import com.nationwide.film.FilmRepository;
+import com.nationwide.film.Film;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin("http://localhost:8000")
 public class FilmController {
 	
 	@Autowired
-	private FilmService filmService;
+	private FilmRepository filmRepository;
 
-	@GetMapping(path = Constants.FILMS)
-	public ResponseEntity<List<Film>> getFilms() {
-		return ResponseEntity.ok(filmService.getFilms());
+	@RequestMapping(value = "/films", method = RequestMethod.GET)
+	public List<Film> getAllFilms() {
+		return filmRepository.findAll();
+	}
+
+	@RequestMapping(value = "/films/{id}", method = RequestMethod.GET)
+	public Optional<Film> getFilmById(@PathVariable("id") String id) {
+		return filmRepository.findById(id);
+	}
+
+	@RequestMapping(value = "/films", method = RequestMethod.POST)
+	public Film addNewFilm(@RequestBody Film film){
+		return filmRepository.save(film);
+	}
+
+	@RequestMapping(value = "/films/{id}", method = RequestMethod.PUT)
+	public Film updateFilm(@PathVariable("id") String id, @RequestBody Film film){
+		film.setId(id);
+		return filmRepository.save(film);
+	}
+
+	@RequestMapping(value = "/films/{id}", method = RequestMethod.DELETE)
+	public void deleteFilm(@PathVariable("id") String id) {
+		filmRepository.deleteById(id);
 	}
 }

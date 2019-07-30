@@ -1,24 +1,34 @@
 package com.nationwide.screen;
 
 import java.util.List;
+import java.util.Optional;
 
-import com.nationwide.constants.Constants;
+import com.nationwide.screen.ScreenRepository;
+import com.nationwide.screen.Screen;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin("http://localhost:8000")
 public class ScreenController {
 	
 	@Autowired
-	private ScreenService screenService;
+	private ScreenRepository screenRepository;
 
-	@GetMapping(path = Constants.SCREENS)
-	public ResponseEntity<List<Screen>> getScreens() {
-		return ResponseEntity.ok(screenService.getScreens());
+	@RequestMapping(value = "/screens", method = RequestMethod.GET)
+	public List<Screen> getAllScreens() {
+		return screenRepository.findAll();
+	}
+
+	@RequestMapping(value = "/screens/{id}", method = RequestMethod.GET)
+	public Optional<Screen> getScreenById(@PathVariable("id") String id) {
+		return screenRepository.findById(id);
+	}
+
+	@RequestMapping(value = "/screens/{id}", method = RequestMethod.PUT)
+	public Screen updateScreen(@PathVariable("id") String id, @RequestBody Screen screen){
+		screen.setId(id);
+		return screenRepository.save(screen);
 	}
 }
