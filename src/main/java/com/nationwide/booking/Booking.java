@@ -72,4 +72,15 @@ public class Booking {
     public void setPaid(boolean paid) {
         this.paid = paid;
     }
+
+    public Booking(String id, String firstName, String lastName, String showingId, Arrays seatIds, double totalPrice,
+            boolean paid) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.showingId = showingId;
+        this.seatIds = seatIds;
+        this.totalPrice = totalPrice;
+        this.paid = paid;
+    }
 }

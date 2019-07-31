@@ -27,4 +27,9 @@ public class Screen {
     public void setSeats(Arrays seats) {
         this.seats = seats;
     }
+
+    public Screen(String id, Arrays seats) {
+        this.id = id;
+        this.seats = seats;
+    }
 }

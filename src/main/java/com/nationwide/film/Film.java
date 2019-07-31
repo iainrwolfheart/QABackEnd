@@ -18,6 +18,8 @@ public class Film {
     private String landImage;
     private String portImage;
 
+    
+
     public String getId() {
         return id;
     }
@@ -98,4 +100,17 @@ public class Film {
         this.portImage = portImage;
     }
 
+    public Film(String id, String title, String cert, String releaseDate, String cast, String director, String runTime,
+            String description, String landImage, String portImage) {
+        this.id = id;
+        this.title = title;
+        this.cert = cert;
+        this.releaseDate = releaseDate;
+        this.cast = cast;
+        this.director = director;
+        this.runTime = runTime;
+        this.description = description;
+        this.landImage = landImage;
+        this.portImage = portImage;
+    }
 }

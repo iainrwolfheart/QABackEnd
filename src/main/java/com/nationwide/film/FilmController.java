@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("http://localhost:8000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class FilmController {
 	
 	@Autowired
@@ -35,6 +35,7 @@ public class FilmController {
 	public Film updateFilm(@PathVariable("id") String id, @RequestBody Film film){
 		film.setId(id);
 		return filmRepository.save(film);
+
 	}
 
 	@RequestMapping(value = "/films/{id}", method = RequestMethod.DELETE)

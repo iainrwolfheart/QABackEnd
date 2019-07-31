@@ -45,4 +45,11 @@ public class Showing {
     public void setScreenId(String screenId) {
         this.screenId = screenId;
     }
+
+    public Showing(String id, String filmId, Timestamp time, String screenId) {
+        this.id = id;
+        this.filmId = filmId;
+        this.time = time;
+        this.screenId = screenId;
+    }
 }
