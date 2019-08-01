@@ -1,7 +1,5 @@
 package com.nationwide.showing;
 
-import java.sql.Timestamp;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,7 +9,7 @@ public class Showing {
     @Id
     private String id;
     private String filmId;
-    private Timestamp time;
+    private String time;
     private String screenId;
 
     public String getId() {
@@ -30,11 +28,11 @@ public class Showing {
         this.filmId = filmId;
     }
 
-    public Timestamp getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -46,10 +44,14 @@ public class Showing {
         this.screenId = screenId;
     }
 
-    public Showing(String id, String filmId, Timestamp time, String screenId) {
-        this.id = id;
+    //public Showing(String id, String filmId, LocalDateTime time, String screenId) {
+		public Showing(String filmId, String time, String screenId) {
+        //this.id = id;
         this.filmId = filmId;
         this.time = time;
         this.screenId = screenId;
-    }
+	}
+	
+	public Showing(){}
+
 }

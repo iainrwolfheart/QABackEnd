@@ -28,6 +28,7 @@ public class ShowingController {
 
 	@RequestMapping(value = "/showings", method = RequestMethod.POST)
 	public Showing addNewShowing(@RequestBody Showing showing){
+		System.out.println(showing.getFilmId() + " " + showing.getScreenId() );
 		return showingRepository.save(showing);
 	}
 
