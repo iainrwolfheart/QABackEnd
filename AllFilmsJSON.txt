@@ -1,0 +1,88 @@
+    {
+        "title": "Dora And The Lost City Of Gold",
+        "cert": "PG",
+        "releaseDate": "2019-08-16",
+        "cast": "Eugenio Derbez, Isabela Moner, Jeffrey Wahlberg",
+        "director": "James Bobin",
+        "runTime": "1hr 40m",
+        "description": "Having spent most of her life exploring the jungle with her parents, nothing could prepare Dora (Isabela Moner) for her most dangerous adventure ever - high school.",
+        "landImage": "https://www.dropbox.com/s/291iiyqsp6fuft0/DoraLS.jpg?raw=1",
+        "portImage": "https://www.dropbox.com/s/moh3o7ypce4l6mb/DoraPT.jpg?raw=1"
+    },
+ {
+        "title": "Once Upon A Time In Hollywood",
+        "cert": "15",
+        "releaseDate": "2019-08-16",
+        "cast": "Brad Pitt, Leonardo DiCaprio, Margot Robbie, Al Pacino",
+        "director": "Quentin Tarantino",
+        "runTime": "2hr 45m",
+        "description": "Quentin Tarantino's Once Upon a Time in... Hollywood visits 1969 Los Angeles, where everything is changing, as TV star Rick Dalton (Leonardo DiCaprio) and his longtime stunt double Cliff Booth (Brad Pitt) make their way around an industry they hardly recognise anymore.",
+        "landImage": "https://www.dropbox.com/s/y441gie46pp3y3o/OnceUponLS.jpg?raw=1",
+        "portImage": "https://www.dropbox.com/s/20dlimfamyvl6jg/OnceUponPT.jpg?raw=1"
+    },
+    {
+        "title": "Tell It To The Bees",
+        "cert": "15",
+        "releaseDate": "2019-07-26",
+        "cast": "Anna Paquin, Gregor Selkirk",
+        "director": "Annabel Jankel",
+        "runTime": "1hr 48m",
+        "description": "Dr Jean Markham (Paquin) returns to the town she left as a teenager to take over her late father's medical practice. When a school-yard scuffle lands Charlie (Gregor Selkirk) in her surgery, she invites him to visit the hives in her garden and tell his secrets to the bees, as she once did.",
+        "landImage": "https://www.dropbox.com/s/ppjo8fvtrt7cd6l/TellItLS.jpg?raw=1",
+        "portImage": "https://www.dropbox.com/s/wmfocq42vtqic8g/TellItPT.jpg?raw=1"
+    },
+    {
+"title": "Annabelle",
+"cert": "15",
+"releaseDate": "2019-07-10",
+"cast": "Mckenna Grace, Patrick Wilson, Vera Farmiga",
+"director": "Gary Dauberman",
+"runTime": "1hr 46m",
+"description": "Determined to keep Annabelle from wreaking havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their house, placing her 'safely' behind sacred glass and enlisting a priest's holy blessing...",
+"landImage": "https://www.dropbox.com/s/d51ijgcbegfb3hd/AnnabelleLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/jrepg4iy25rojui/AnnabellePT.jpg?raw=1"
+},
+{
+"title": "Joker",
+"cert": "15",
+"releaseDate": "2019-10-04",
+"cast": "Joaquin Phoenix, Zazie Beetz, Robert De Niro, Marc Maron",
+"director": "Todd Phillips",
+"runTime": "2hr 2m",
+"description": "Failed comedian Arthur Fleck encounters violent thugs while wandering the streets of Gotham City dressed as a clown. Disregarded by society, Fleck begins a slow dissent into madness as he transforms into the criminal mastermind known as the Joker.",
+"landImage": "https://www.dropbox.com/s/rloedd1ju72xdfz/JokerLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/g9yams18ma9a9yi/JokerPT.jpg?raw=1"
+},
+{
+"title": "Ad Astra",
+"cert": "15",
+"releaseDate": "2019-09-20",
+"cast": "Brad Pitt, Tommy Lee Jones, Ruth Negga, Donald Sutherland",
+"director": "James Gray",
+"runTime": "2hr 45m",
+"description": "A man journeys across a lawless solar system to find his missing father -- a renegade scientist who poses a threat to humanity.",
+"landImage": "https://www.dropbox.com/s/kdpdxaj8ubeg81g/AdAstraLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/zddqxzqnhrehz4q/AdAstraPT.jpg?raw=1"
+},
+{
+"title": "Scary Stories to Tell in the Dark",
+"cert": "12",
+"releaseDate": "2019-08-23",
+"cast": "Zoe Margaret Colletti, Austin Abrams, Natalie Ganzhorn, Gabriel Rush",
+"director": "André Øvredal",
+"runTime": "1hr 51m",
+"description": "The shadow of the Bellows family has loomed large in the small town of Mill Valley for generations. It's in a mansion that young Sarah Bellows turns her tortured life and horrible secrets into a series of scary stories. These terrifying tales soon have a way of becoming all too real for a group of unsuspecting teens who stumble upon Sarah's spooky home.",
+"landImage": "https://www.dropbox.com/s/zvawtghz54njxaa/ScaryLS.jpeg?raw=1",
+"portImage": "https://www.dropbox.com/s/ywj54zhu3axctlm/ScaryPT.jpg?raw=1"
+},
+{
+"title": "Frozen 2",
+"cert": "PG",
+"releaseDate": "2019-11-22",
+"cast": "Idina Menzel, Josh Gad, Sterling K. Brown, Evan Rachel Wood",
+"directors": "Jennifer Lee, Chris Buck",
+"runTime": "1hr 46m",
+"description": "Elsa the Snow Queen and her sister Anna embark on an adventure far away from the kingdom of Arendelle. They are joined by friends, Kristoff, Olaf, and Sven.",
+"landImage": "https://www.dropbox.com/s/4jspzjpgkum90d6/FrozenLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/cbzecwflw2c7hk5/FrozenPT.jpg?raw=1"
+}

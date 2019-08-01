@@ -5,4 +5,5 @@ public class Constants {
 	public final static String FILMS = "/films";
 	public final static String SCREENS = "/screens";
 	public final static String SHOWINGS = "/showings";
+	public final static String DISCUSSIONS = "/discussion";
 }

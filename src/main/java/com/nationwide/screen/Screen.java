@@ -1,7 +1,6 @@
 package com.nationwide.screen;
 
 import java.util.List;
-import java.sql.Array;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
