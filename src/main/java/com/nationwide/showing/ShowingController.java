@@ -26,6 +26,11 @@ public class ShowingController {
 		return showingRepository.findById(id);
 	}
 
+	@RequestMapping(value = "/film/{id}/showings", method = RequestMethod.GET)
+	public List<Showing> getFilmId(@PathVariable("id") String id) {
+		return showingRepository.findAllByFilmId(id);
+	}
+
 	@RequestMapping(value = "/showings", method = RequestMethod.POST)
 	public Showing addNewShowing(@RequestBody Showing showing){
 		System.out.println(showing.getFilmId() + " " + showing.getScreenId() );
