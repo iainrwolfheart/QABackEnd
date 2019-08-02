@@ -1,7 +1,6 @@
 package com.nationwide.screen;
 
-import java.util.Arrays;
-
+import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,7 +9,7 @@ public class Screen {
 
     @Id
     private String id;
-    private Arrays seats;
+    private List<List<String>> seats;
 
     public String getId() {
         return id;
@@ -20,11 +19,16 @@ public class Screen {
         this.id = id;
     }
 
-    public Arrays getSeats() {
+    public List<List<String>> getSeats() {
         return seats;
     }
 
-    public void setSeats(Arrays seats) {
+    public void setSeats(List<List<String>> seats) {
+        this.seats = seats;
+    }
+
+    public Screen(String id, List<List<String>> seats) {
+        this.id = id;
         this.seats = seats;
     }
 }

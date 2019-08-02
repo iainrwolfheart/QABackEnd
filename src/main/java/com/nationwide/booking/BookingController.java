@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("http://localhost:8000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class BookingController {
 	
 	@Autowired
@@ -24,6 +24,11 @@ public class BookingController {
 	@RequestMapping(value = "/bookings/{id}", method = RequestMethod.GET)
 	public Optional<Booking> getBookingById(@PathVariable("id") String id) {
 		return bookingRepository.findById(id);
+	}
+
+	@RequestMapping(value = "/bookings/showing/{id}", method = RequestMethod.GET)
+	public List<Booking> getBookingByShowingId(@PathVariable("id") String id) {
+		return bookingRepository.findByShowingId(id);
 	}
 
 	@RequestMapping(value = "/bookings", method = RequestMethod.POST)

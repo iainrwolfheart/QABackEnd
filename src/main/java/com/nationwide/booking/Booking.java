@@ -1,6 +1,5 @@
 package com.nationwide.booking;
 
-import java.util.Arrays;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,7 +12,7 @@ public class Booking {
     private String firstName;
     private String lastName;
     private String showingId;
-    private Arrays seatIds;
+    private String[] seatIds;
     private double totalPrice;
     private boolean paid;
 
@@ -49,11 +48,11 @@ public class Booking {
         this.showingId = showingId;
     }
 
-    public Arrays getSeatIds() {
+    public String[] getSeatIds() {
         return seatIds;
     }
 
-    public void setSeatIds(Arrays seatIds) {
+    public void setSeatIds(String[] seatIds) {
         this.seatIds = seatIds;
     }
 
@@ -70,6 +69,18 @@ public class Booking {
     }
 
     public void setPaid(boolean paid) {
+        this.paid = paid;
+	}
+	
+	public Booking() {}
+
+    public Booking(String firstName, String lastName, String showingId, String[] seatIds, double totalPrice,
+            boolean paid) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.showingId = showingId;
+        this.seatIds = seatIds;
+        this.totalPrice = totalPrice;
         this.paid = paid;
     }
 }

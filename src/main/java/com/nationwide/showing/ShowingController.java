@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("http://localhost:8000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ShowingController {
 	
 	@Autowired
@@ -26,8 +26,14 @@ public class ShowingController {
 		return showingRepository.findById(id);
 	}
 
+	@RequestMapping(value = "/film/{id}/showings", method = RequestMethod.GET)
+	public List<Showing> getFilmId(@PathVariable("id") String id) {
+		return showingRepository.findAllByFilmId(id);
+	}
+
 	@RequestMapping(value = "/showings", method = RequestMethod.POST)
 	public Showing addNewShowing(@RequestBody Showing showing){
+		System.out.println(showing.getFilmId() + " " + showing.getScreenId() );
 		return showingRepository.save(showing);
 	}
 
