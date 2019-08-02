@@ -26,6 +26,11 @@ public class BookingController {
 		return bookingRepository.findById(id);
 	}
 
+	@RequestMapping(value = "/bookings/showing/{id}", method = RequestMethod.GET)
+	public List<Booking> getBookingByShowingId(@PathVariable("id") String id) {
+		return bookingRepository.findByShowingId(id);
+	}
+
 	@RequestMapping(value = "/bookings", method = RequestMethod.POST)
 	public Booking addNewBooking(@RequestBody Booking booking){
 		return bookingRepository.save(booking);
