@@ -6,8 +6,8 @@
         "director": "James Bobin",
         "runTime": "1hr 40m",
         "description": "Having spent most of her life exploring the jungle with her parents, nothing could prepare Dora (Isabela Moner) for her most dangerous adventure ever - high school.",
-        "landImage": "https://www.dropbox.com/s/291iiyqsp6fuft0/DoraLS.jpg?raw=1",
-        "portImage": "https://www.dropbox.com/s/moh3o7ypce4l6mb/DoraPT.jpg?raw=1"
+        "landImage": "https://www.dropbox.com/s/dmhmzdacrmyip0n/DoraLS.jpg?raw=1",
+        "portImage": "https://www.dropbox.com/s/xzdybh3bmutgvpy/DoraPT.jpg?raw=1"
     },
  {
         "title": "Once Upon A Time In Hollywood",
@@ -17,20 +17,20 @@
         "director": "Quentin Tarantino",
         "runTime": "2hr 45m",
         "description": "Quentin Tarantino's Once Upon a Time in... Hollywood visits 1969 Los Angeles, where everything is changing, as TV star Rick Dalton (Leonardo DiCaprio) and his longtime stunt double Cliff Booth (Brad Pitt) make their way around an industry they hardly recognise anymore.",
-        "landImage": "https://www.dropbox.com/s/y441gie46pp3y3o/OnceUponLS.jpg?raw=1",
-        "portImage": "https://www.dropbox.com/s/20dlimfamyvl6jg/OnceUponPT.jpg?raw=1"
+        "landImage": "https://www.dropbox.com/s/5uq93owwzvil1xs/OnceUponLS.jpg?raw=1",
+        "portImage": "https://www.dropbox.com/s/tdw13znj2dc7bep/OnceUponPT.jpg?raw=1"
     },
-    {
-        "title": "Tell It To The Bees",
-        "cert": "15",
-        "releaseDate": "2019-07-26",
-        "cast": "Anna Paquin, Gregor Selkirk",
-        "director": "Annabel Jankel",
-        "runTime": "1hr 48m",
-        "description": "Dr Jean Markham (Paquin) returns to the town she left as a teenager to take over her late father's medical practice. When a school-yard scuffle lands Charlie (Gregor Selkirk) in her surgery, she invites him to visit the hives in her garden and tell his secrets to the bees, as she once did.",
-        "landImage": "https://www.dropbox.com/s/ppjo8fvtrt7cd6l/TellItLS.jpg?raw=1",
-        "portImage": "https://www.dropbox.com/s/wmfocq42vtqic8g/TellItPT.jpg?raw=1"
-    },
+{
+        "title": "Toy Story 4",
+        "cert": "12",
+        "releaseDate": "2019-06-21",
+        "cast": "Keanu Reeves, Tom Hanks, Tim Allen, Tony Hale",
+        "director": "Josh Cooley",
+        "runTime": "1hr 40m",
+        "description": "Woody, Buzz Lightyear and the rest of the gang embark on a road trip with Bonnie and a new toy named Forky. The adventurous journey turns into an unexpected reunion as Woody's slight detour leads him to his long-lost friend Bo Peep. As Woody and Bo discuss the old days, they soon start to realize that they're worlds apart when it comes to what they want from life as a toy.",
+	"landImage": "https://www.dropbox.com/s/sjnec6j2xhkpx7p/ToystoryLS.jpg?raw=1",
+	"portImage": "https://www.dropbox.com/s/3ze0zoa15ijqag0/ToystoryPT.jpg?raw=1"
+     },
     {
 "title": "Annabelle",
 "cert": "15",
@@ -39,8 +39,8 @@
 "director": "Gary Dauberman",
 "runTime": "1hr 46m",
 "description": "Determined to keep Annabelle from wreaking havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their house, placing her 'safely' behind sacred glass and enlisting a priest's holy blessing...",
-"landImage": "https://www.dropbox.com/s/d51ijgcbegfb3hd/AnnabelleLS.jpg?raw=1",
-"portImage": "https://www.dropbox.com/s/jrepg4iy25rojui/AnnabellePT.jpg?raw=1"
+"landImage": "https://www.dropbox.com/s/k9t6s1kz7iw4reo/AnnabelleLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/4w2e5lmzleu7c0l/AnnabellePT.jpg?raw=1"
 },
 {
 "title": "Joker",
@@ -50,8 +50,8 @@
 "director": "Todd Phillips",
 "runTime": "2hr 2m",
 "description": "Failed comedian Arthur Fleck encounters violent thugs while wandering the streets of Gotham City dressed as a clown. Disregarded by society, Fleck begins a slow dissent into madness as he transforms into the criminal mastermind known as the Joker.",
-"landImage": "https://www.dropbox.com/s/rloedd1ju72xdfz/JokerLS.jpg?raw=1",
-"portImage": "https://www.dropbox.com/s/g9yams18ma9a9yi/JokerPT.jpg?raw=1"
+"landImage": "https://www.dropbox.com/s/r37r5oro53037oc/JokerLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/9gvqqd5yyk9uzaj/JokerPT.jpg?raw=1"
 },
 {
 "title": "Ad Astra",
@@ -61,8 +61,8 @@
 "director": "James Gray",
 "runTime": "2hr 45m",
 "description": "A man journeys across a lawless solar system to find his missing father -- a renegade scientist who poses a threat to humanity.",
-"landImage": "https://www.dropbox.com/s/kdpdxaj8ubeg81g/AdAstraLS.jpg?raw=1",
-"portImage": "https://www.dropbox.com/s/zddqxzqnhrehz4q/AdAstraPT.jpg?raw=1"
+"landImage": "https://www.dropbox.com/s/9qdsflai2mson5h/AdAstraLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/1r73qou2bjlnnvq/AdAstraPT.jpg?raw=1"
 },
 {
 "title": "Scary Stories to Tell in the Dark",
@@ -72,8 +72,8 @@
 "director": "André Øvredal",
 "runTime": "1hr 51m",
 "description": "The shadow of the Bellows family has loomed large in the small town of Mill Valley for generations. It's in a mansion that young Sarah Bellows turns her tortured life and horrible secrets into a series of scary stories. These terrifying tales soon have a way of becoming all too real for a group of unsuspecting teens who stumble upon Sarah's spooky home.",
-"landImage": "https://www.dropbox.com/s/zvawtghz54njxaa/ScaryLS.jpeg?raw=1",
-"portImage": "https://www.dropbox.com/s/ywj54zhu3axctlm/ScaryPT.jpg?raw=1"
+"landImage": "https://www.dropbox.com/s/1ywd8rrhfrm5quq/ScaryLS.jpeg?raw=1",
+"portImage": "https://www.dropbox.com/s/8j2nkcmkaqqr1o9/ScaryPT.jpg?raw=1"
 },
 {
 "title": "Frozen 2",
@@ -83,6 +83,6 @@
 "directors": "Jennifer Lee, Chris Buck",
 "runTime": "1hr 46m",
 "description": "Elsa the Snow Queen and her sister Anna embark on an adventure far away from the kingdom of Arendelle. They are joined by friends, Kristoff, Olaf, and Sven.",
-"landImage": "https://www.dropbox.com/s/4jspzjpgkum90d6/FrozenLS.jpg?raw=1",
-"portImage": "https://www.dropbox.com/s/cbzecwflw2c7hk5/FrozenPT.jpg?raw=1"
+"landImage": "https://www.dropbox.com/s/p33mqmgka1eypnz/FrozenLS.jpg?raw=1",
+"portImage": "https://www.dropbox.com/s/lm7uc62h643sm81/FrozenPT.jpg?raw=1"
 }
