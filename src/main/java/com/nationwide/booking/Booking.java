@@ -11,10 +11,12 @@ public class Booking {
     private String id;
     private String firstName;
     private String lastName;
+	private String email;
     private String showingId;
-    private String[] seatIds;
+	private String[] seatIds;
     private double totalPrice;
     private boolean paid;
+    private boolean cancelled;
 
     public String getId() {
         return id;
@@ -74,13 +76,31 @@ public class Booking {
 	
 	public Booking() {}
 
-    public Booking(String firstName, String lastName, String showingId, String[] seatIds, double totalPrice,
-            boolean paid) {
+    public Booking(String firstName, String lastName, String email, String showingId, String[] seatIds, double totalPrice,
+            boolean paid, boolean cancelled) {
         this.firstName = firstName;
-        this.lastName = lastName;
+		this.lastName = lastName;
+		this.email = email;
         this.showingId = showingId;
         this.seatIds = seatIds;
         this.totalPrice = totalPrice;
-        this.paid = paid;
+		this.paid = paid;
+		this.cancelled = cancelled;
     }
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	public void setCancelled(boolean cancelled) {
+		this.cancelled = cancelled;
+	}
 }
