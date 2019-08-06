@@ -1,9 +1,12 @@
 package com.nationwide.booking;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import com.nationwide.booking.BookingRepository;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mongodb.util.JSON;
 import com.nationwide.booking.Booking;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +43,29 @@ public class BookingController {
 	public Booking updateBooking(@PathVariable("id") String id, @RequestBody Booking booking){
 		booking.setId(id);
 		return bookingRepository.save(booking);
+	}
+
+	@RequestMapping(value = "/bookings/{id}/setseats", method = RequestMethod.POST)
+	public Booking setSeats(@PathVariable("id") String id, @RequestBody Map<String, String[]> payload){
+		// String[] seats = payload.get("seatIds");
+
+		Booking existingBooking = bookingRepository.getBookingById(id);
+		existingBooking.setSeatIds(payload.get("seatIds"));
+		return bookingRepository.save(existingBooking);
+	}
+
+	@RequestMapping(value = "/bookings/{id}/confirm", method = RequestMethod.POST)
+	public Booking finaliseBooking(@PathVariable("id") String id, @RequestBody Map<String, Object> payload){
+		Booking existingBooking = bookingRepository.getBookingById(id);
+		// existingBooking.setFirstName(payload.get("firstName").toString());
+		// existingBooking.setLastName(lastName);
+		// existingBooking.setEmail(email);
+		Boolean paid = Boolean.parseBoolean(payload.get("paid").toString());
+		existingBooking.setPaid(paid);
+		Boolean cancelled = Boolean.parseBoolean(payload.get("cancelled").toString());
+		existingBooking.setCancelled(cancelled);
+
+		return bookingRepository.save(existingBooking);
 	}
 
 	@RequestMapping(value = "/bookings/{id}", method = RequestMethod.DELETE)
