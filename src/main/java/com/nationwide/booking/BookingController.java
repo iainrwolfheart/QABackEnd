@@ -32,14 +32,14 @@ public class BookingController {
 	}
 
 	@RequestMapping(value = "/bookings", method = RequestMethod.POST)
-	public Booking addNewBooking(@RequestBody Booking booking){
-		return bookingRepository.save(booking);
+	public void addNewBooking(@RequestBody Booking booking){
+		bookingRepository.save(booking);
 	}
 
 	@RequestMapping(value = "/bookings/{id}", method = RequestMethod.PUT)
-	public Booking updateBooking(@PathVariable("id") String id, @RequestBody Booking booking){
+	public void updateBooking(@PathVariable("id") String id, @RequestBody Booking booking){
 		booking.setId(id);
-		return bookingRepository.save(booking);
+		bookingRepository.save(booking);
 	}
 
 	@RequestMapping(value = "/bookings/{id}", method = RequestMethod.DELETE)

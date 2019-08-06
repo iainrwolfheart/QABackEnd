@@ -27,6 +27,8 @@ public class Screen {
         this.seats = seats;
     }
 
+    public Screen() {}
+
     public Screen(String id, List<List<String>> seats) {
         this.id = id;
         this.seats = seats;

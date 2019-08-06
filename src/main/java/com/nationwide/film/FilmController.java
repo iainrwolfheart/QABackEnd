@@ -27,15 +27,14 @@ public class FilmController {
 	}
 
 	@RequestMapping(value = "/films", method = RequestMethod.POST)
-	public Film addNewFilm(@RequestBody Film film){
-		return filmRepository.save(film);
+	public void addNewFilm(@RequestBody Film film){
+		filmRepository.save(film);
 	}
 
 	@RequestMapping(value = "/films/{id}", method = RequestMethod.PUT)
-	public Film updateFilm(@PathVariable("id") String id, @RequestBody Film film){
+	public void updateFilm(@PathVariable("id") String id, @RequestBody Film film){
 		film.setId(id);
-		return filmRepository.save(film);
-
+		filmRepository.save(film);
 	}
 
 	@RequestMapping(value = "/films/{id}", method = RequestMethod.DELETE)
