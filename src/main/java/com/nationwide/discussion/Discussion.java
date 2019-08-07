@@ -13,7 +13,7 @@ public class Discussion {
     private String comments;
     private String rating;
     private String datePosted;
-    
+
     public String getId() {
 		return id;
 	}
@@ -50,6 +50,9 @@ public class Discussion {
 	public void setDatePosted(String datePosted) {
 		this.datePosted = datePosted;
 	}
+
+	public Discussion () {}
+
 	public Discussion(String id, String userName, String movieName, String comments, String rating, String datePosted) {
 		this.id = id;
 		this.userName = userName;

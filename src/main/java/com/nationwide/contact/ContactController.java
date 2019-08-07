@@ -27,14 +27,14 @@ public class ContactController {
 	}
 
 	@RequestMapping(value = "/contactus", method = RequestMethod.POST)
-	public Contact addNewContact(@RequestBody Contact contact){
-		return contactRepository.save(contact);
+	public void addNewContact(@RequestBody Contact contact){
+		contactRepository.save(contact);
 	}
 
 	@RequestMapping(value = "/contactus/{id}", method = RequestMethod.PUT)
-	public Contact updateContact(@PathVariable("id") String id, @RequestBody Contact contact){
+	public void updateContact(@PathVariable("id") String id, @RequestBody Contact contact){
 		contact.setId(id);
-		return contactRepository.save(contact);
+		contactRepository.save(contact);
 
 	}
 

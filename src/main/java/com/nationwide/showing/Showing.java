@@ -51,7 +51,7 @@ public class Showing {
         this.time = time;
         this.screenId = screenId;
 	}
-	
+
 	public Showing(){}
 
 }

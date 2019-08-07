@@ -27,8 +27,8 @@ public class ScreenController {
 	}
 
 	@RequestMapping(value = "/screens/{id}", method = RequestMethod.PUT)
-	public Screen updateScreen(@PathVariable("id") String id, @RequestBody Screen screen){
+	public void updateScreen(@PathVariable("id") String id, @RequestBody Screen screen){
 		screen.setId(id);
-		return screenRepository.save(screen);
+		screenRepository.save(screen);
 	}
 }

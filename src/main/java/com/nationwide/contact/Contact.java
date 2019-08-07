@@ -52,6 +52,7 @@ public class Contact {
     public void setYourMessage(String yourMessage) {
         this.yourMessage = yourMessage;
     }
+    public Contact() {}
 
     public Contact(String id, String name, String email, String subject, String yourMessage) {
         this.id = id;

@@ -19,7 +19,6 @@ public class Film {
     private String portImage;
 
     
-
     public String getId() {
         return id;
     }
@@ -99,6 +98,8 @@ public class Film {
     public void setPortImage(String portImage) {
         this.portImage = portImage;
     }
+    
+    public Film() {}
 
     public Film(String id, String title, String cert, String releaseDate, String cast, String director, String runTime,
             String description, String landImage, String portImage) {
