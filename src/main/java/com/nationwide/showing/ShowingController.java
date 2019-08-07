@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://35.246.125.69")
+@CrossOrigin()
 public class ShowingController {
 
 	@Autowired
