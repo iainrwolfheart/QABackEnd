@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "**")
+@CrossOrigin(origins = "")
 public class ShowingController {
 
 	@Autowired
