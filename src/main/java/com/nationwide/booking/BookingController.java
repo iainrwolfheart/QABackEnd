@@ -57,9 +57,9 @@ public class BookingController {
 	@RequestMapping(value = "/bookings/{id}/confirm", method = RequestMethod.POST)
 	public Booking finaliseBooking(@PathVariable("id") String id, @RequestBody Map<String, Object> payload){
 		Booking existingBooking = bookingRepository.getBookingById(id);
-		// existingBooking.setFirstName(payload.get("firstName").toString());
-		// existingBooking.setLastName(lastName);
-		// existingBooking.setEmail(email);
+		existingBooking.setFirstName(payload.get("firstName").toString());
+		existingBooking.setLastName(payload.get("lastName").toString());
+		existingBooking.setEmail(payload.get("email").toString());
 		Boolean paid = Boolean.parseBoolean(payload.get("paid").toString());
 		existingBooking.setPaid(paid);
 		Boolean cancelled = Boolean.parseBoolean(payload.get("cancelled").toString());
