@@ -35,8 +35,8 @@ public class BookingController {
 	}
 
 	@RequestMapping(value = "/bookings", method = RequestMethod.POST)
-	public void addNewBooking(@RequestBody Booking booking){
-		bookingRepository.save(booking);
+	public Booking addNewBooking(@RequestBody Booking booking){
+		return bookingRepository.save(booking);
 	}
 
 	@RequestMapping(value = "/bookings/{id}", method = RequestMethod.PUT)
