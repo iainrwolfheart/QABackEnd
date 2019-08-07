@@ -9,5 +9,7 @@ import org.springframework.stereotype.Repository;
 public interface BookingRepository extends MongoRepository<Booking, String> {
 
 	List<Booking> findByShowingId(String id);
+
+	Booking getBookingById(String id);
 	
 }
